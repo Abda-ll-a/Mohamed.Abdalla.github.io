@@ -146,7 +146,7 @@
     <li><a onclick="goHome();goTo('exp-section')">Experience</a></li>
     <li><a onclick="goHome();goTo('contact-section')">Contact</a></li>
   </ul>
-  <button onclick="downloadCV()" class="btn btn-primary" style="padding:.6rem 1.4rem;font-size:.85rem;">Resume ↗</button>
+  <a href="Mohamed_Abdullah_Data_Analyst.pdf" target="_blank" class="btn btn-primary">Resume ↗</a>
 </nav>
 
 <div id="home-page" class="page active">
@@ -157,7 +157,7 @@
       <p class="hero-sub">Data Analyst specializing in turning raw data into clear, actionable insights — through SQL, Power BI, and Excel.</p>
       <div class="hero-cta">
         <button onclick="goTo('projects-section')" class="btn btn-primary">View My Work</button>
-        <button onclick="downloadCV()" class="btn btn-outline">Download Resume</button>
+        <a href="Mohamed_Abdullah_Data_Analyst.pdf" target="_blank" class="btn btn-outline">Download Resume</a>
       </div>
       <div class="hero-stats">
         <div><div class="stat-num">8+</div><div class="stat-label">Projects Completed</div></div>
@@ -235,7 +235,7 @@
         <div class="contact-links reveal">
           <a href="mailto:mohamed.abdalla2882@gmail.com" class="contact-link">✉️ Email Me</a>
           <a href="http://www.linkedin.com/in/mohamed-abdalla-a48b23254" target="_blank" class="contact-link">💼 LinkedIn</a>
-          <button onclick="downloadCV()" class="contact-link">📄 Resume</button>
+          <a href="Mohamed_Abdullah_Data_Analyst.pdf" target="_blank" class="contact-link">📄 Resume</a>
         </div>
       </div>
     </div>
@@ -274,7 +274,6 @@ function openProject(id){
   document.getElementById('proj-content').innerHTML='<span class="proj-tool-badge '+p.toolClass+'">'+p.tool+'</span><div class="proj-big-title">'+p.icon+' '+p.title+'</div><p class="proj-sub">'+p.sub+'</p><div class="proj-stats-row">'+p.stats.map(s=>'<div class="proj-stat">'+s+'</div>').join('')+'</div><div class="proj-divider"></div><div class="proj-block"><div class="proj-block-title">Objective</div><p class="proj-body-text">'+p.objective+'</p></div>'+qaHtml+'<div class="proj-block"><div class="proj-block-title">Key Insights</div><ul class="proj-list">'+p.insights.map(i=>'<li>'+i+'</li>').join('')+'</ul></div><div class="proj-divider"></div><div class="proj-block"><div class="proj-block-title">Tools Used</div><div class="tools-row">'+p.tools.map(t=>'<span class="tool-chip">'+t+'</span>').join('')+'</div></div>'+navHtml;
   document.getElementById('home-page').classList.remove('active');document.getElementById('proj-page').classList.add('active');window.scrollTo({top:0,behavior:'smooth'});
 }
-function downloadCV(){const bytes=atob(cvB64);const arr=new Uint8Array(bytes.length);for(let i=0;i<bytes.length;i++)arr[i]=bytes.charCodeAt(i);const blob=new Blob([arr],{type:'application/pdf'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='Mohamed_Abdalla_CV.pdf';a.click();URL.revokeObjectURL(url)}
 const reveals=document.querySelectorAll('.reveal');
 const obs=new IntersectionObserver((entries)=>{entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*60);obs.unobserve(e.target)}});},{threshold:.1});
 reveals.forEach(el=>obs.observe(el));
