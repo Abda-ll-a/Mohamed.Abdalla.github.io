@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohamed Abdalla | Data Analyst</title>
+<meta name="description" content="Data Analyst in Cairo with 2+ years of experience in SQL, Power BI and Excel. Dashboards across sales, inventory, customer, HR and road-safety data.">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script>document.documentElement.className="js";try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<style>
+:root{--white:#fff;--cream:#faf7ef;--navy:#0b1f3a;--navy2:#16315a;--gold:#b8923a;--gold2:#d4af5a;--goldbg:#f6eed8;--black:#0a0a0a;--ink:#2a3342;--mute:#667085;--line:#e6e0d0;--card:#fff;--navbg:rgba(255,255,255,.92);--tile:#0b1f3a;--band:#0b1f3a;--sh:0 24px 46px -14px rgba(184,146,58,.42),0 10px 22px rgba(11,31,58,.10);--pg1:#f3dd9a;--pg2:#c9a24a;--pg3:#0b1f3a;--glow-a:.15}
+[data-theme=dark]{--white:#0a1424;--cream:#0d1b30;--card:#112340;--navy:#f2f5fb;--navy2:#cdd7ea;--ink:#cdd5e3;--mute:#97a3b8;--line:#243b61;--goldbg:#1d2b46;--navbg:rgba(10,20,36,.9);--tile:#1b3358;--band:#07101f;--sh:0 24px 50px -14px rgba(212,175,90,.34),0 10px 24px rgba(0,0,0,.5);--pg1:#f3dd9a;--pg2:#d4af5a;--pg3:#4f7fd1;--glow-a:.085;color-scheme:dark}
+body,nav,.card,.stat,.job,.db,.dh,.filters button{transition:background-color .35s,color .35s,border-color .35s}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:'DM Sans',system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.65}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;color:var(--navy);line-height:1.15}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:30;background:var(--navbg);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-family:'Playfair Display',serif;font-weight:700;font-size:1.25rem;color:var(--navy);width:42px;height:42px;display:grid;place-items:center;border:2px solid var(--gold);border-radius:10px}
+nav ul{display:flex;gap:30px;list-style:none;font-weight:500;font-size:.95rem}
+nav ul a{color:var(--ink)}nav ul a:hover{color:var(--gold)}
+.btn{display:inline-block;padding:12px 26px;font-weight:700;font-size:.95rem;border:2px solid var(--navy);border-radius:999px;transition:.2s;cursor:pointer;background:none;font-family:inherit;color:var(--navy)}
+.btn.fill{background:var(--navy);color:#fff}.btn.fill:hover{background:var(--gold);border-color:var(--gold);color:var(--black)}
+.btn.line:hover{background:var(--navy);color:#fff}
+.btn.sm{padding:8px 20px;font-size:.88rem}
+/* hero */
+.hero{padding:96px 0 72px;background:radial-gradient(900px 400px at 85% 0%,var(--goldbg),transparent 70%),var(--white)}
+.pill{display:inline-flex;align-items:center;gap:8px;font-size:.88rem;font-weight:500;color:var(--navy);background:var(--goldbg);border:1px solid var(--gold2);padding:6px 16px;border-radius:999px}
+.pill i{width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.hero h1{font-size:clamp(3rem,9vw,6rem);margin:22px 0 16px;letter-spacing:-.02em}
+.hero h1 span{color:var(--gold)}
+.hero .lead{font-size:1.2rem;color:var(--ink);max-width:620px;margin-bottom:32px}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:64px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.stat b{display:block;font-family:'Playfair Display',serif;font-size:2.4rem;color:var(--navy)}
+.stat small{color:var(--mute)}
+.quote{margin-top:56px;font-family:'Playfair Display',serif;font-style:italic;font-size:1.4rem;color:var(--navy);border-left:4px solid var(--gold);padding-left:20px}
+section.s{padding:88px 0}section.alt{background:var(--cream)}
+.head{margin-bottom:44px}
+.eyebrow{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--gold)}
+.head h2{font-size:clamp(2rem,4vw,2.8rem);margin:6px 0 8px}
+.head p{color:var(--mute)}
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px}
+.ic{width:52px;height:52px;border-radius:12px;background:var(--tile);display:grid;place-items:center;font-size:1.5rem;margin-bottom:14px}
+.card h3{font-size:1.2rem;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chips span{font-size:.8rem;background:var(--cream);border:1px solid var(--line);padding:3px 11px;border-radius:999px;color:var(--navy)}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+.filters button{font-family:inherit;font-size:.9rem;font-weight:500;padding:8px 20px;border:1px solid var(--navy);border-radius:999px;background:var(--card);color:var(--navy);cursor:pointer}
+.filters button.on,.filters button:hover{background:var(--navy);color:#fff}
+.proj{text-align:left;font-family:inherit;cursor:pointer;display:flex;flex-direction:column;transition:.25s}
+.proj:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:var(--sh)}
+.ptop{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.tag{font-size:.78rem;font-weight:700;color:var(--navy);background:var(--goldbg);border:1px solid var(--gold2);padding:3px 12px;border-radius:999px}
+.pe{font-size:1.7rem}
+.proj p{font-size:.93rem;margin:6px 0 14px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;color:var(--ink)}
+.proj .chips{margin-top:auto;margin-bottom:16px}
+.proj .chips span{background:var(--navy);color:#fff;border-color:var(--navy)}
+.more{font-weight:700;font-size:.9rem;color:var(--gold)}
+/* timeline */
+.tl{border-left:2px solid var(--gold2);margin-left:8px;padding-left:30px;display:grid;gap:26px}
+.job{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+.job::before{content:"";position:absolute;left:-40px;top:30px;width:14px;height:14px;background:var(--gold);border:3px solid var(--card);border-radius:50%;box-shadow:0 0 0 2px var(--gold2)}
+.job time{font-size:.85rem;font-weight:700;color:var(--gold)}
+.job h3{font-size:1.3rem;margin:2px 0}.job .co{color:var(--mute);margin-bottom:10px}
+.job ul{padding-left:18px}.job li{margin-bottom:4px}
+.edu{display:flex;gap:20px;align-items:center}
+.edu .ic{margin:0;flex:none}
+.edu h3{margin-bottom:2px}
+.award{display:inline-block;margin-top:10px;font-weight:700;color:var(--navy);background:var(--goldbg);border:1px solid var(--gold2);padding:4px 14px;border-radius:999px;font-size:.88rem}
+.contact{background:var(--band);text-align:center;color:#fff}
+.contact h2{color:#fff}.contact .eyebrow{color:var(--gold2)}
+.contact p{color:#d3dbe8;margin:10px 0 28px}
+.contact .btns{justify-content:center}
+.contact .btn{border-color:var(--gold2);color:#fff}
+.contact .btn.fill{background:var(--gold2);color:var(--black)}
+.contact .btn.line:hover{background:var(--gold2);color:var(--black)}
+footer{background:var(--black);color:#9aa3b2;text-align:center;font-size:.85rem;padding:22px}
+/* detail */
+#detail{display:none;padding:56px 0 88px;background:var(--cream);min-height:80vh}
+.back{font-weight:700;color:var(--navy);background:none;border:0;cursor:pointer;font-family:inherit;font-size:1rem;margin-bottom:26px}
+.back:hover{color:var(--gold)}
+.dh{position:relative;overflow:hidden;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:32px;margin-bottom:22px}
+.dh::after{content:"";position:absolute;left:0;top:0;height:4px;width:100%;background:linear-gradient(90deg,var(--pg1),var(--pg3))}
+.dh .pe{font-size:2.4rem}
+.dh h1{font-size:clamp(2rem,5vw,3rem);margin:8px 0 14px}
+.db{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px 32px;margin-bottom:22px}
+.db h2{font-size:1.4rem;margin-bottom:12px}
+.db h2::after{content:"";display:block;width:44px;height:3px;background:var(--gold);margin-top:8px}
+.db ul{padding-left:20px}.db li{margin-bottom:5px}
+.qa dt{font-weight:700;color:var(--navy);padding-top:12px;border-top:1px solid var(--line);margin-top:12px}
+.qa dt:first-child{border:0;margin-top:0;padding-top:0}
+.qa dd{padding:2px 0}
+.video{aspect-ratio:16/9;background:#0b1f3a;border-radius:14px;overflow:hidden;margin-bottom:22px}
+.video iframe,.video video{width:100%;height:100%;border:0}
+.shot{width:100%;border:1px solid var(--line);border-radius:14px;margin-bottom:22px}
+
+/* dark-mode fixes */
+[data-theme=dark] .btn.fill{background:var(--gold);border-color:var(--gold);color:#0a0a0a}
+[data-theme=dark] .btn.fill:hover{background:var(--gold2);border-color:var(--gold2)}
+[data-theme=dark] .btn.line:hover,[data-theme=dark] .filters button.on,[data-theme=dark] .filters button:hover{background:var(--gold);border-color:var(--gold);color:#0a0a0a}
+[data-theme=dark] .proj .chips span{background:#1b3358;border-color:#2a4673;color:#e6ebf5}
+[data-theme=dark] .hero{background:radial-gradient(900px 400px at 85% 0%,rgba(184,146,58,.18),transparent 70%),var(--white)}
+
+/* section glow that follows where you are */
+#main .hero,#main section.s{position:relative}
+#main .hero::before,#main section.s::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:var(--glow,0);background:radial-gradient(ellipse 75% 65% at 50% 45%,rgba(212,175,90,var(--glow-a)),transparent 72%),linear-gradient(180deg,rgba(212,175,90,.05),rgba(212,175,90,.015) 60%,transparent)}
+#main .hero>.wrap,#main section.s>.wrap{position:relative;z-index:1}
+/* motion + hover polish */
+.progress{position:fixed;top:0;left:0;height:4px;width:0;opacity:0;z-index:60;border-radius:0 4px 4px 0;background:linear-gradient(90deg,var(--pg1),var(--pg2) 45%,var(--pg3));background-size:100vw 100%;background-repeat:no-repeat;box-shadow:0 0 12px rgba(212,175,90,.55);transition:opacity .35s}
+.navr{display:flex;align-items:center;gap:12px}
+.tbtn{width:40px;height:40px;border-radius:50%;border:2px solid var(--gold);background:var(--card);cursor:pointer;font-size:1.05rem;line-height:1;transition:.25s}
+.tbtn:hover{background:var(--gold);transform:rotate(18deg) scale(1.06)}
+nav ul a{position:relative;padding:4px 0}
+nav ul a::after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:100%;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+nav ul a:hover::after,nav ul a.on::after{transform:scaleX(1)}
+nav ul a.on{color:var(--gold)}
+.btn{transition:transform .2s,box-shadow .2s,background-color .2s,color .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(184,146,58,.28)}
+.hero h1 span{position:relative;display:inline-block}
+@keyframes draw{to{transform:scaleX(1)}}
+.card,.stat{position:relative;overflow:hidden}
+.card::after{content:"";position:absolute;left:0;top:0;height:3px;width:0;background:linear-gradient(90deg,var(--pg1),var(--pg3));transition:width .45s}
+.card:hover::after{width:100%}
+.stat::after{content:"";position:absolute;left:0;top:0;height:3px;width:100%;background:linear-gradient(90deg,var(--pg1),var(--pg3))}
+.card:not(.proj):not(.edu):hover,.stat:hover{transform:translateY(-4px);box-shadow:var(--sh);border-color:var(--gold2)}
+.card,.stat{transition:transform .3s,box-shadow .3s,border-color .3s,background-color .35s}
+.card:hover .ic{transform:rotate(-6deg) scale(1.08)}
+.ic{transition:transform .3s}
+.job{transition:transform .3s,box-shadow .3s,border-color .3s}
+.job:hover{transform:translateX(6px);border-color:var(--gold2);box-shadow:var(--sh)}
+.more{display:inline-block;transition:transform .25s}
+.proj:hover .more{transform:translateX(6px)}
+.head h2::after{content:"";display:block;width:56px;height:3px;background:var(--gold);margin-top:12px;border-radius:2px;transition:width .8s .15s}
+html.js .head:not(.in) h2::after{width:0}
+html.js .rv{opacity:0;transform:translateY(22px)}
+.rv{transition:opacity .7s,transform .7s}
+html.js .rv.in,.rv.in{opacity:1;transform:none}
+.card.rv,.stat.rv,.job.rv{transition:opacity .7s,transform .3s,box-shadow .3s,border-color .3s,background-color .35s}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.totop{position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:50%;border:2px solid var(--gold);background:var(--card);color:var(--navy);font-size:1.2rem;cursor:pointer;opacity:0;pointer-events:none;transform:translateY(10px);transition:.3s;z-index:40}
+.totop.show{opacity:1;pointer-events:auto;transform:none}
+.totop:hover{background:var(--gold);color:#0a0a0a}
+.db{transition:transform .3s,box-shadow .3s}.db:hover{box-shadow:var(--sh)}
+.qa dt{transition:color .2s}.qa dt:hover{color:var(--gold)}
+@media(prefers-reduced-motion:reduce){html.js .rv{opacity:1;transform:none}}
+
+.card:not(.edu)::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(240px circle at var(--mx,50%) var(--my,50%),rgba(212,175,90,.15),transparent 70%)}
+.card:not(.edu):hover::before{opacity:1}
+.chips span{transition:border-color .2s,transform .2s}.chips span:hover{border-color:var(--gold);transform:translateY(-1px)}
+#detail .wrap{animation:fadeUp .5s both}
+.pn{display:flex;justify-content:space-between;gap:12px;margin:8px 0 22px}
+.pn button:disabled{opacity:.35;cursor:default;transform:none;box-shadow:none}
+@media(max-width:860px){nav ul{display:none}.stats{grid-template-columns:1fr 1fr}.hero{padding:64px 0 48px}section.s{padding:60px 0}.edu{flex-direction:column;align-items:flex-start}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="progress" id="prog"></div>
+<button class="totop" id="top2" aria-label="Back to top">↑</button>
+<div id="main">
+<nav><div class="wrap"><a href="#top" class="logo">MA</a>
+<ul><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li></ul>
+<div class="navr"><button class="tbtn" id="theme" aria-label="Toggle dark and light mode" title="Toggle dark / light">🌙</button><a class="btn fill sm" href="Mohamed_Abdalla_CV.pdf" target="_blank" rel="noopener">Resume ↗</a></div></div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<span class="pill"><i></i>Available for new opportunities</span>
+<h1>Mohamed<br><span>Abdalla</span></h1>
+<p class="lead">Data Analyst specializing in turning raw data into clear, actionable insights through SQL, Power BI and Excel.</p>
+<div class="btns"><a class="btn fill" href="#projects">View My Work</a><a class="btn line" href="Mohamed_Abdalla_CV.pdf" download="Mohamed_Abdalla_Data_Analyst_CV.pdf">Download Resume</a></div>
+<div class="stats"><div class="stat"><b>9</b><small>Projects Completed</small></div><div class="stat"><b>2+</b><small>Years Experience</small></div><div class="stat"><b>4</b><small>Core Tools</small></div><div class="stat"><b>8</b><small>Business Domains Analyzed</small></div></div>
+<p class="quote">“Without data, you’re just guessing in the dark.”</p>
+</div></header>
+
+<section class="s alt" id="skills"><div class="wrap"><div class="head"><span class="eyebrow">Technical Skills</span><h2>What I Work With</h2><p>A toolkit built for real-world data challenges.</p></div>
+<div class="grid">
+<div class="card"><div class="ic">🗄️</div><h3>SQL &amp; Databases</h3><div class="chips"><span>Microsoft SQL Server</span><span>T-SQL</span><span>Joins</span><span>CTEs</span><span>Window Functions</span><span>Aggregations</span><span>CRUD</span></div></div>
+<div class="card"><div class="ic">📊</div><h3>Power BI</h3><div class="chips"><span>DAX</span><span>Power Query</span><span>Data Modeling</span><span>Interactive Dashboards</span><span>KPI Reporting</span></div></div>
+<div class="card"><div class="ic">📗</div><h3>Excel</h3><div class="chips"><span>PivotTables</span><span>VLOOKUP</span><span>Data Cleaning</span><span>Advanced Formulas</span><span>Charts</span></div></div>
+<div class="card"><div class="ic">🐍</div><h3>Python</h3><div class="chips"><span>Pandas</span><span>NumPy</span><span>Web Scraping</span><span>Machine Learning</span><span>Random Forest</span></div></div>
+<div class="card"><div class="ic">⚙️</div><h3>Data &amp; ETL</h3><div class="chips"><span>Data Extraction</span><span>Data Cleaning</span><span>Transformation</span><span>ETL</span><span>Trend Analysis</span><span>Reporting Automation</span></div></div>
+<div class="card"><div class="ic">🛠️</div><h3>Other Tools</h3><div class="chips"><span>Odoo ERP</span><span>Microsoft Office</span><span>Statistical Analysis</span><span>Regression</span><span>Correlation</span></div></div>
+</div></div></section>
+
+<section class="s" id="projects"><div class="wrap"><div class="head"><span class="eyebrow">Portfolio</span><h2>Featured Projects</h2><p>Click any project to explore the full analysis, insights and methodology.</p></div>
+<div class="filters" id="filters"></div><div class="grid" id="projGrid"></div></div></section>
+
+<section class="s alt" id="experience"><div class="wrap"><div class="head"><span class="eyebrow">Career</span><h2>Experience</h2><p>Turning ERP data into reliable reporting and dashboards.</p></div>
+<div class="tl">
+<div class="job"><time>Feb 2024 – Present</time><h3>Data Analyst</h3><div class="co">T-Shirtk Company · Full-time</div><ul><li>Extract and analyze sales, inventory and customer data from Odoo ERP to support business reporting and operational decisions.</li><li>Clean and transform transactional data using Excel and SQL to improve data consistency and reporting reliability.</li><li>Develop dashboards and KPI reports tracking revenue, best-selling products and inventory movement.</li><li>Identify sales and stock trends to help stakeholders monitor performance and make data-informed decisions.</li></ul></div>
+</div></div></section>
+
+<section class="s"><div class="wrap"><div class="head"><span class="eyebrow">Education</span><h2>Academic Background</h2></div>
+<div class="card edu"><div class="ic">🎓</div><div><h3>Bachelor of Computer Science</h3><div>Mansoura University · September 2020 – November 2024</div><span class="award">🏆 Graduation Project Rated: Excellent</span></div></div></div></section>
+
+<section class="s contact" id="contact"><div class="wrap"><span class="eyebrow">Let’s Connect</span><h2>Got a project in mind?</h2><p>Open to new opportunities, collaborations and interesting data challenges.</p>
+<div class="btns"><a class="btn fill" href="mailto:mohamed.abdalla2882@gmail.com">✉️ Email Me</a><a class="btn line" href="http://www.linkedin.com/in/mohamed-abdalla-a48b23254">💼 LinkedIn</a><a class="btn line" href="Mohamed_Abdalla_CV.pdf" target="_blank" rel="noopener">📄 Resume</a></div></div></section>
+<footer>Mohamed Abdalla · Data Analyst · Cairo, Egypt</footer>
+</div>
+
+<main id="detail"><div class="wrap"><button class="back" onclick="closeP()">← Back to Portfolio</button><div id="dbody"></div></div></main>
+
+<script>
+/* Per project: video = YouTube ID, "drive:FILE_ID", or "videos/name.mp4". img = screenshot path like "img/hr.png". Leave "" if none yet. */
+const P=[
+{t:"HR Analytics Dashboard",c:"Excel",kpi:"1,470 employees, 16.12% attrition",o:"Analyze HR data to understand employee attrition patterns, department distributions, job satisfaction levels and demographic insights.",
+prob:"Uncover the key reasons behind employee attrition and identify trends related to job roles, departments, marital status and education level.",tools:["Microsoft Excel (cleaning, analysis, visualization)"],video:"",img:"",
+secs:[{h:"Questions and answers",qa:[["How many employees are in the dataset?","1,470."],["How many have left?","237 employees (16.12% attrition); 1,233 are still active."],["Average age of employees?","37 years."],["Which education level has the highest attrition?","Bachelor’s degree holders."],["Which job roles have the highest attrition?","Sales Executive and Laboratory Technician."],["Which department has the highest attrition?","Sales."],["Which age group is most affected?","Ages 25 to 34."],["Which marital status is most affected?","Married employees."],["Overall job satisfaction?","2.6 out of 5 on average."]]},
+{h:"Insights",li:["Sales and technical roles show the highest attrition.","Younger employees (25 to 34) are more likely to leave.","Married employees tend to leave more often.","Bachelor’s degree holders dominate attrition figures.","Gender balance: 882 males and 588 females."]}]},
+{t:"E-Commerce Sales Analysis",c:"Excel",kpi:"$2.3M sales, 9,994 orders, 12.47% margin",o:"Analyze e-commerce performance using sales, profit, quantity sold, number of orders and profit margin across categories, regions and time periods.",
+prob:"E-commerce companies handle large volumes of transactions across categories, customer segments and regions. It is hard to monitor performance, find top sellers or spot declining trends. This dashboard surfaces those patterns to support decisions.",tools:["Microsoft Excel (cleaning, analysis, dashboard)","Power Query","Pivot charts"],video:"",img:"",
+secs:[{h:"Questions and answers",qa:[["Total sales?","$2,297,200."],["Total profit?","$286,400."],["Units sold?","37,873."],["Orders placed?","9,994."],["Profit margin?","12.47%."],["Trend over time?","All metrics show positive year-over-year growth except profit margin, which declined slightly (-5.15%)."],["Best months?","November and December have the highest sales and profit."],["Most profitable category?","Technology, with $145.45K profit."],["Top sub-categories?","Phones and Chairs, each with over $300K in sales."],["Top states?","California and New York."]]},
+{h:"Insights",li:["Technology is the most profitable category.","Phones and Chairs dominate the top-selling sub-categories.","The West region and the Consumer segment contribute significantly to sales.","Sales and profit rise toward year end, suggesting strong holiday performance.","Revenue and orders grew while profit margin dropped, which needs attention."]}]},
+{t:"Car Sales Dashboard",c:"Power BI",kpi:"$371.19M YTD sales, +23.59% YoY",o:"Analyze car sales using total sales, average price and units sold, comparing Month-to-Date and Year-over-Year performance across models, colors, body styles and dealer regions.",
+prob:"Auto dealers operate in a competitive market where preferences, regional trends and pricing affect results. Without clear visuals it is hard to monitor sales and pricing trends, find the best models and colors, and detect weak areas or months.",tools:["Power BI (dashboard and interactivity)","Power Query (transformation and cleaning)","DAX (YoY, MTD, Total Sales)"],video:"",img:"",
+secs:[{h:"Questions and answers",qa:[["Total sales YTD?","$371.19M."],["Average selling price YTD?","$27.99K."],["Cars sold YTD?","13.26K units."],["Month-to-Date sales?","$54.28M."],["Cars sold this month?","1,921."],["YoY growth?","Sales and units sold both grew 23.59%."],["Top body styles?","SUVs and Hatchbacks, each over 22% of total sales."],["Most sold color?","Pale White, 47.02% of units."],["Top models?","Malibu, Pathfinder and Galant."],["Top regions?","Greenville, Austin and Scottsdale."]]},
+{h:"Insights",li:["SUV and Hatchback body styles dominate.","Pale White and Black are the most popular colors.","Sales volume grows consistently week over week.","Malibu and Pathfinder contribute significantly to revenue.","Average price fell slightly year over year (-0.79%), which could be strategic or a concern.","Regional performance shows potential for targeting specific locations."]}]},
+{t:"Road Accidents Analysis",c:"Power BI",kpi:"144K accidents, fatalities down 33.3%",o:"Analyze UK road accident data: number and types of casualties, vehicle types, accident locations and time patterns, to identify critical areas for road safety.",
+prob:"Road authorities struggle to see accident patterns. Without clear insight it is hard to identify high-risk road types, vehicle-specific trends go unnoticed, and critical locations are not prioritized for intervention.",tools:["Microsoft Power BI (visualization and dashboard design)","Power Query (cleaning and transformation)"],video:"",img:"",
+secs:[{h:"Questions and answers",qa:[["Casualties this year?","196K, down 11.9%."],["Accidents this year?","144K, down 11.7%."],["Fatalities?","2.9K, down 33.3%."],["Serious casualties?","27K, down 16.2%."],["Slight injuries?","166K, down 10.6%."],["Vehicle type with most casualties?","Cars, with 155,804."],["Urban vs rural?","Urban 61.95%, rural 38.05%."],["Day vs night?","Day 73.84%, night 26.16%."],["Most dangerous road type?","Single carriageways, over 140K casualties."],["Regions with most casualties?","Southern and central UK."]]},
+{h:"Insights",li:["Accidents are decreasing overall and fatalities fell sharply, though fatalities still need attention.","Cars are the leading source of casualties, pointing to regulation or driver-behavior campaigns.","Most accidents happen in daytime, so visibility alone is not the cause; congestion or distraction may play a role.","Urban areas see more accidents, likely due to density and traffic.","Single carriageways are the most accident-prone and may need infrastructure upgrades or speed enforcement."]}]},
+{t:"Adidas Sales Performance",c:"Power BI",kpi:"$900M sales, $332.13M profit, 42.3% margin",o:"Analyze Adidas sales across products, regions, retailers and time to support marketing, inventory planning and sales optimization.",
+prob:"Retail businesses struggle to understand where and why performance varies. Without clear insight, top products and regions are hard to find, sales methods (online, in-store, outlet) are not compared, monthly and regional patterns go unnoticed, and weak locations cannot be targeted.",tools:["Power BI (interactive dashboard, cleaning and preparation)","Power Query"],video:"",img:"",
+secs:[{h:"Questions and answers",qa:[["Total sales?","$900M."],["Profit?","$332.13M."],["Units sold?","2M."],["Average price per unit?","$45.22."],["Average profit margin?","42.3%."],["Top product?","Men’s Street Footwear: $209M sales, $82.8M profit."],["Most used sales method?","In-store (39.63%), then Outlet and Online."],["Most profitable region?","West: $89.61M profit and 687K units."],["Monthly trend?","July is highest ($95M), followed by August and December."],["Best and worst locations?","Best cities: Charleston and New York ($40M each). Weakest states: North Dakota, Wisconsin and Iowa."]]},
+{h:"Insights",li:["Men’s Street Footwear is the top seller and most profitable product; prioritize it in promotions and stock.","In-store purchases dominate; improve in-store experience and capacity.","The West region leads in profit and volume; consider more investment and supply.","July and August are peak months for seasonal campaigns.","Weak states could benefit from targeted campaigns or distribution improvements."]}]},
+{t:"Customer Performance",c:"Power BI",kpi:"18,000 customers, 71% with children",o:"Analyze customer demographics and behavior to find spending patterns, segmentation and gender-based performance for targeted marketing and relationship strategies.",
+prob:"Businesses often lack visibility into who their top customers are and how groups contribute to revenue. The most valuable segments can be overlooked, gender and age insights go unnoticed, child status and loyalty are underused for segmentation, and top contributors are not rewarded.",tools:["Power BI (dashboard and visualizations)","Power Query (transformation and cleaning)","DAX (customer types, age brackets, revenue by gender)"],video:"",img:"",
+secs:[{h:"Questions and answers",qa:[["Average customer age?","45.45 years."],["Customers analyzed?","18,000."],["Customers with children?","71%. The United States leads (35.68% share, $77.41M from 7,819 customers)."],["Customers without children?","29%. Australia leads (44.02% share, $39.67M from 3,591 customers)."],["Top revenue age group?","31 to 40 ($80M), then 51 to 60 ($77M) and 41 to 50 ($75M)."],["Revenue by customer type?","Loyal $273M, Periodic $20M, VIP $14M."],["Top 5 customers by spend?","Between $155K and $194K each."],["Revenue by gender?","Female 50.3% ($154M), male 49.7% ($153M)."]]},
+{h:"Insights",li:["Customers with children are the majority and contribute significantly more revenue.","Females generate slightly more revenue than males.","The 31 to 40 age group is the most lucrative segment for marketing.","Loyal customers are the largest source of revenue, so retention programs should prioritize them.","The top 5 customers contribute a large revenue share, a case for a VIP program."]}]},
+{t:"Netflix Content Analysis",c:"SQL",kpi:"15 SQL analyses of Netflix titles",file:"https://drive.google.com/file/d/14uX4ihg_bzHWS7x_KpficIYle2PqEq7g/view?usp=sharing",o:"Exploratory SQL analysis of Netflix’s title dataset to find patterns in content types, genres, release years, directors, durations and country-wise trends, supporting content acquisition, audience targeting and platform optimization.",
+prob:"",tools:["T-SQL","CTEs and window functions","Aggregations"],video:"",img:"",
+secs:[{h:"Analyses, insights and recommendations",qa:[["1. Content type distribution","Movies are more prevalent than TV Shows. Consider more TV Shows if retention for episodic content is high."],["2. Content rating patterns","Most common rating: TV-MA for movies, TV-14 for TV shows. Optimize parental controls around dominant ratings."],["3. Year-based analysis","Filtered all 2020 releases to understand trends during COVID lockdowns. Explore engagement for pandemic-year content."],["4. Country-wise insights","The USA leads in volume, followed by India. Use this to guide licensing and translation priorities."],["5. Movie duration and outliers","Identified the longest movie. Assess drop-off on long content to tune ideal length."],["6. Recent additions","Content added in the last 5 years shows freshness and publishing pace. Keep a healthy pipeline of new titles."],["7. Director exploration","Rajiv Chilaka is a recurring director focused on children’s content. Highlight a “Kids’ Favorites” category."],["8. Multi-season TV shows","Shows with 5+ seasons indicate long-running favorites. Promote them as binge-worthy."],["9. Genre and rating spread","TV-MA and TV-14 dominate. Align guidelines and marketing with rating-based audiences."],["10. India content trends","Found the top 5 years with the most Indian content. Focus on high-performing genres from those years."],["11. Documentary content","Documentaries are categorized distinctly. Consider a “Docs and Reality” section."],["12. Missing data","Some entries lack director metadata. Run regular data audits and validation."],["13. Actor analysis: Salman Khan","Limited presence over the last 10 years. Consider acquiring more Bollywood content."],["14. Top Indian actors","Top 10 actors by movie count show demand and star power. Use them in thumbnails and recommendations."],["15. Content classification","Classified content using the keywords “Kill” or “Violence” to support moderation and sensitive-content labels."]]}]},
+{t:"Library Management System",c:"SQL",kpi:"Relational design, CRUD and fines logic",file:"https://drive.google.com/file/d/1kRQXl3PVP1XFx0AEoKedMHPwlam9uELU/view?usp=sharing",o:"Design, manage and analyze library data in T-SQL: foreign key relationships, CRUD operations and advanced analytical queries to track book inventory, member activity and employee performance while ensuring data integrity.",
+prob:"",tools:["T-SQL","Foreign keys and constraints","CTAS summary tables"],video:"",img:"",
+secs:[{h:"What was built",qa:[["Data integrity","Added foreign keys across employees, branches, books, issued_status and return_status; validated structures with sp_help. Enforce referential integrity to prevent orphaned records."],["Book management and CRUD","Inserted a new book record, updated a member’s address and deleted an issued-book record. Keep audit trails for accountability."],["Issued and returned books","Retrieved books issued by an employee, found members who issued more than one book, and built a CTAS table of issue counts per book. Summary tables speed up reporting."],["Category and pricing analysis","Listed books by category, calculated rental income per category and created a table of books priced above $7. Use pricing thresholds to inform promotions."],["Temporal and registration insights","Listed members registered in the last 180 days, built a CTAS table of members active in the last 6 months, and found unreturned books. Use recent activity to segment and retain members."],["Advanced SQL operations","Identified overdue books (30+ days) with member, title and days overdue; auto-updated book status on return; built a branch performance report (issues, returns, revenue); ranked the top 3 employees by issues processed; tracked members who repeatedly issued damaged books."],["Fines and penalties","Created an overdue_books_fines_summary table with overdue count, total fines (0.50 per day after 30 days) and total books issued."]]},
+{h:"Overall recommendations",li:["Enforce foreign keys for data consistency.","Use CTAS for quick summary tables and dashboards.","Monitor member behavior to prevent abuse.","Automate overdue alerts and fine calculations.","Analyze employee performance for training and rewards."]}]},
+{t:"Postpartum Depression Predictor",c:"Machine Learning",kpi:"Random Forest, graduation project rated Excellent",o:"Graduation project: predicting postpartum depression using machine learning (Random Forest) at Mansoura University.",
+prob:"",tools:["Python","Pandas","Random Forest"],video:"",img:"",secs:[{h:"Result",li:["Built with a Random Forest classifier in Python.","The graduation project was rated Excellent."]}]}];
+
+const IC=["👥","🛒","🚗","🚦","👟","👤","🎬","📚","🧠"];
+const cats=["All",...new Set(P.map(p=>p.c))];
+const f=document.getElementById("filters"),g=document.getElementById("projGrid"),main=document.getElementById("main"),det=document.getElementById("detail"),db=document.getElementById("dbody");
+let scrollY0=0;
+function chips(p){return `<div class="chips">${p.kpi.split(", ").map(k=>`<span>${k}</span>`).join("")}</div>`}
+function draw(c){g.innerHTML=P.map((p,i)=>({p,i})).filter(o=>c=="All"||o.p.c==c).map(({p,i})=>`<button class="card proj" onclick="openP(${i})"><div class="ptop"><span class="tag">${p.c}</span><span class="pe">${IC[i]}</span></div><h3>${p.t}</h3><p>${p.o}</p>${chips(p)}<span class="more">Explore Project →</span></button>`).join("");
+window.__rv&&window.__rv(g.querySelectorAll(".proj"));f.innerHTML=cats.map(x=>`<button class="${x==c?"on":""}" onclick="draw('${x}')">${x}</button>`).join("")}
+function vid(v){if(!v)return"";
+if(v.startsWith("drive:"))return`<div class="video"><iframe src="https://drive.google.com/file/d/${v.slice(6)}/preview" allowfullscreen title="Project video"></iframe></div>`;
+if(/\.(mp4|webm)$/.test(v))return`<div class="video"><video controls preload="metadata" src="${v}"></video></div>`;
+return`<div class="video"><iframe src="https://www.youtube.com/embed/${v}" allowfullscreen title="Project video"></iframe></div>`}
+function openP(i){const p=P[i];if(main.style.display!=="none")scrollY0=window.scrollY;
+const secs=p.secs.map(s=>`<div class="db"><h2>${s.h}</h2>`+(s.qa?`<dl class="qa">${s.qa.map(([q,a])=>`<dt>${q}</dt><dd>${a}</dd>`).join("")}</dl>`:"")+(s.li?`<ul>${s.li.map(x=>`<li>${x}</li>`).join("")}</ul>`:"")+`</div>`).join("");
+db.innerHTML=`<div class="dh"><span class="pe">${IC[i]}</span> <span class="tag">${p.c}</span><h1>${p.t}</h1>${chips(p)}</div>${vid(p.video)}${p.img?`<img class="shot" src="${p.img}" alt="${p.t} dashboard">`:""}<div class="db"><h2>Objective</h2><p>${p.o}</p></div>${p.prob?`<div class="db"><h2>Problem</h2><p>${p.prob}</p></div>`:""}${secs}<div class="db"><h2>Tools used</h2><ul>${p.tools.map(k=>`<li>${k}</li>`).join("")}</ul>${p.file?`<p style="margin-top:18px"><a class="btn line sm" href="${p.file}" target="_blank" rel="noopener">Open project file</a></p>`:""}</div><div class="pn"><button class="btn line sm" onclick="openP(${i-1})" ${i==0?"disabled":""}>← Previous project</button><button class="btn line sm" onclick="openP(${i+1})" ${i==P.length-1?"disabled":""}>Next project →</button></div><button class="back" onclick="closeP()">← Back to Portfolio</button>`;
+main.style.display="none";det.style.display="block";window.scrollTo(0,0);window.__frame&&window.__frame();try{history.pushState({p:i},"","#project-"+i)}catch(e){}}
+function closeP(){det.style.display="none";main.style.display="block";window.scrollTo(0,scrollY0);window.__frame&&window.__frame();try{if(location.hash.startsWith("#project-"))history.replaceState(null,"",location.pathname)}catch(e){}}
+window.addEventListener("popstate",()=>{if(!location.hash.startsWith("#project-"))closeP()});
+
+/* theme, progress, reveal, scroll-spy */
+(function(){
+const root=document.documentElement,tb=document.getElementById("theme");
+function setIcon(){tb.textContent=root.dataset.theme==="dark"?"☀️":"🌙"}
+setIcon();
+tb.onclick=()=>{const d=root.dataset.theme==="dark"?"light":"dark";root.dataset.theme=d;try{localStorage.setItem("theme",d)}catch(e){}setIcon()};
+const prog=document.getElementById("prog"),tt=document.getElementById("top2");
+tt.onclick=()=>window.scrollTo({top:0,behavior:"smooth"});
+const skills=document.getElementById("skills"),glowEls=[...document.querySelectorAll("#main .hero,#main section.s")];
+let tk=false;
+function frame(){tk=false;
+ const vh=innerHeight,y=scrollY,detail=document.getElementById("detail").style.display==="block";
+ const max=document.documentElement.scrollHeight-vh;
+ const start=detail?0:skills.getBoundingClientRect().top+y-140;
+ const p=Math.min(1,Math.max(0,(y-start)/Math.max(1,max-start)));
+ prog.style.width=(p*100)+"%";prog.style.opacity=p>0.001?1:0;
+ tt.classList.toggle("show",y>600);
+ if(!detail){let cur="";["skills","projects","experience","contact"].forEach(id=>{const r=document.getElementById(id).getBoundingClientRect();if(r.top<=vh*.45&&r.bottom>vh*.45)cur=id});if(y>=max-6)cur="contact";document.querySelectorAll("nav ul a").forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+cur))}
+ if(!detail)glowEls.forEach(el=>{const r=el.getBoundingClientRect();const d=Math.abs(r.top+r.height/2-vh/2);const f=r.height/2+vh*.32;const t=Math.max(0,1-d/f);el.style.setProperty("--glow",(t*t*(3-2*t)).toFixed(3))});
+}
+function req(){if(!tk){tk=true;requestAnimationFrame(frame)}}
+addEventListener("scroll",req,{passive:true});addEventListener("resize",req);frame();
+window.__frame=frame;
+function count(t){const b=t.querySelector("b");if(!b||matchMedia("(prefers-reduced-motion: reduce)").matches)return;const m=b.textContent.match(/^(\d+)(.*)$/);if(!m)return;const n=+m[1],suf=m[2];let st=null;b.textContent="0"+suf;requestAnimationFrame(function f(ts){st=st||ts;const k=Math.min(1,(ts-st)/1100);b.textContent=Math.round(n*(1-Math.pow(1-k,3)))+suf;if(k<1)requestAnimationFrame(f)})}
+const io="IntersectionObserver" in window?new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const t=e.target;t.classList.add("in");io.unobserve(t);if(t.classList.contains("stat"))count(t);setTimeout(()=>{t.style.transitionDelay=""},1000)}}),{threshold:.12}):null;
+function rv(el,i){el.classList.add("rv");el.style.transitionDelay=(i%4)*70+"ms";io?io.observe(el):el.classList.add("in")}
+window.__rv=els=>[...els].forEach(rv);
+window.__rv(document.querySelectorAll("#main .head,#main .stat,#main .card:not(.proj),#main .job,.hero .quote"));
+document.addEventListener("mousemove",e=>{const c=e.target.closest&&e.target.closest(".card");if(c){const r=c.getBoundingClientRect();c.style.setProperty("--mx",(e.clientX-r.left)+"px");c.style.setProperty("--my",(e.clientY-r.top)+"px")}},{passive:true});
+const links=[...document.querySelectorAll("nav ul a")];
+})();
+draw("All");
+if(location.hash.startsWith("#project-")){const i=+location.hash.slice(9);if(P[i])openP(i)}
+
+</script>
+</body>
+</html>
